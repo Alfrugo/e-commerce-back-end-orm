@@ -1,13 +1,12 @@
 // import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
-const { strictLeft } = require('sequelize/types/lib/operators');
+
 // import our database connection from config.js
 const sequelize = require('../config/connection');
 
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Product extends Model {
 
-  // does it need anything? Not sure what this really does ...
   
 }
 
@@ -30,7 +29,7 @@ Product.init(
       type: DataTypes.DECIMAL,
       allowNull: false,
       validate: {
-        decimal: str.match(/^[-+]?[0-9]+\.[0-9]+$/)  // pretty sure this is wrong... 
+        isDecimal: true
       }
     },
     stock: {
@@ -38,7 +37,7 @@ Product.init(
       allowNull: false,
       defaultValue: 10,
       validate: {
-        num: isNaN()  // pretty sure this is wrong... 
+        isNumeric: true
       }
     },
 

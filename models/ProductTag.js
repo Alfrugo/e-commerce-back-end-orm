@@ -24,7 +24,7 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'tag',
-        key: 'id'   /// a key is always needed .. i'm guessing yes as the anchor to the model. ?
+        key: 'id'   
       }
     }
 
