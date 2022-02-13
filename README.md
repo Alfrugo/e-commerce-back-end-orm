@@ -20,3 +20,14 @@ WHEN I open API GET routes in Insomnia for categories, products, or tags
     THEN the data for each of these routes is displayed in a formatted JSON
 WHEN I test API POST, PUT, and DELETE routes in Insomnia
     THEN I am able to successfully create, update, and delete data in my database
+## Application visuals
+
+<img src="https://user-images.githubusercontent.com/36056407/153769680-d72c9ccb-8913-4049-acaa-c100d3f79b8a.png">
+
+
+
+## License
+
+The license used for this project is MIT.
+
+This project was created by [Alfredo Diez](https://alfredo-diez.com)  - Please, [contact me](mailto:diez_alfredo@hotmail.com) if you have further questions. 
